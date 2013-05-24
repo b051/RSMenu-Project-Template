@@ -1,7 +1,7 @@
 RSMenu* Xcode Project Templates
 ====================================
 
-This template provides a starting point for an application using [RSMenuController](https://github.com/b051/RSMenuController) and [RSMenuController](https://github.com/b051/RSMenuView).
+This template provides a starting point for an application using [RSMenuController](https://github.com/b051/RSMenuController) and [RSMenuView](https://github.com/b051/RSMenuView).
 
 ## Installation
 
