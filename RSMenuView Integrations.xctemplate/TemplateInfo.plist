@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>Identifier</key>
+		<string>com.rexsheng.template.additions.RSMenuViewIntegrations</string>
+		<key>Ancestors</key>
+		<array>
+			<string>com.rexsheng.template.additions.RSMenuControllerIntegrations</string>
+		</array>
+		<key>Kind</key>
+		<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+		<key>Options</key>
+		<array>
+			<dict>
+				<key>Default</key>
+				<string>false</string>
+				<key>Identifier</key>
+				<string>RSMenuControllerIntegrations</string>
+				<key>Name</key>
+				<string>use RSMenuView</string>
+				<key>SortOrder</key>
+				<integer>3</integer>
+				<key>Type</key>
+				<string>checkbox</string>
+				<key>Units</key>
+				<dict>
+					<key>true</key>
+					<dict>
+						<key>Nodes</key>
+						<array>
+							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:RSMenuControllerIntegrations:LeftMenu</string>
+							<string>___VARIABLE_classPrefix:identifier___AppDelegate.h:import:leftMenu</string>
+							<string>___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:leftMenu</string>
+							<string>Classes/___VARIABLE_classPrefix:identifier___MenuViewControlle.h</string>
+							<string>Classes/___VARIABLE_classPrefix:identifier___MenuViewController.m</string>
+							<string>Classes/___VARIABLE_classPrefix:identifier___LeftMenuViewController.h</string>
+							<string>Classes/___VARIABLE_classPrefix:identifier___LeftMenuViewController.m</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>___VARIABLE_classPrefix:identifier___AppDelegate.h:import:leftMenu</key>
+							<string>@class ___VARIABLE_classPrefix:identifier___LeftMenuViewController;
+</string>
+							<key>Classes/___VARIABLE_classPrefix:identifier___MenuViewControlle.h</key>
+							<dict>
+								<key>Path</key>
+								<string>MenuViewController.h</string>
+								<key>Group</key>
+								<string>Menu</string>
+							</dict>
+						
+							<key>Classes/___VARIABLE_classPrefix:identifier___MenuViewController.m</key>
+							<dict>
+								<key>Path</key>
+								<string>MenuViewController.m</string>
+								<key>Group</key>
+								<string>Menu</string>
+							</dict>
+							
+							<key>Classes/___VARIABLE_classPrefix:identifier___LeftMenuViewController.h</key>
+							<dict>
+								<key>Path</key>
+								<string>LeftMenuViewController.h</string>
+								<key>Group</key>
+								<string>Menu</string>
+							</dict>
+							
+							<key>Classes/___VARIABLE_classPrefix:identifier___LeftMenuViewController.m</key>
+							<dict>
+								<key>Path</key>
+								<string>LeftMenuViewController.m</string>
+								<key>Group</key>
+								<string>Menu</string>
+							</dict>
+						
+							<key>___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:leftMenu</key>
+							<string>@property (nonatomic, strong) ___VARIABLE_classPrefix:identifier___LeftMenuViewController *leftMenu;
+</string>
+							<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:RSMenuControllerIntegrations:LeftMenu</key>
+							<string>_leftMenu = [[___VARIABLE_classPrefix:identifier___LeftMenuViewController alloc] init];
+_menuController.leftViewControllers = @[_leftMenu];</string>
+						</dict>
+					</dict>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+</plist>

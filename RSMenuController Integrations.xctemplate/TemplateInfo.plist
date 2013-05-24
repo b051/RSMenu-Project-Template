@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>Identifier</key>
+		<string>com.rexsheng.template.additions.RSMenuControllerIntegrations</string>
+		<key>Ancestors</key>
+		<array>
+		</array>
+		<key>Kind</key>
+		<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+		<key>Options</key>
+		<array>
+			<dict>
+				<key>Default</key>
+				<string>false</string>
+				<key>Identifier</key>
+				<string>RSMenuControllerIntegrations</string>
+				<key>Name</key>
+				<string>use RSMenuController</string>
+				<key>SortOrder</key>
+				<integer>2</integer>
+				<key>Type</key>
+				<string>checkbox</string>
+				<key>Units</key>
+				<dict>
+					<key>true</key>
+					<dict>
+						<key>Nodes</key>
+						<array>
+							<string>___PACKAGENAME___-Prefix.pch:objC:importRSMenuController</string>
+							<string>___VARIABLE_classPrefix:identifier___AppDelegate.h:import:menuController</string>
+							<string>___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:menuController</string>
+							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:RSMenuControllerIntegrations</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>___PACKAGENAME___-Prefix.pch:objC:importRSMenuController</key>
+							<string>#define MENU_MARGIN &lt;#margin when menu folded#&gt;
+#import "RSMenuController.h"</string>
+							
+							<key>___VARIABLE_classPrefix:identifier___AppDelegate.h:import:menuController</key>
+							<string>@class RSMenuController;
+</string>
+							
+							<key>___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:menuController</key>
+							<string>@property (nonatomic, strong) RSMenuController *menuController;
+</string>
+							
+							<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:RSMenuControllerIntegrations</key>
+							<dict>
+								<key>Beginning</key>
+								<string>
+UINavigationController *navController = [[UINavigationController alloc] init];
+_menuController = [[RSMenuController alloc] initWithRootViewController:navController margin:MENU_MARGIN];
+</string>
+								<key>End</key>
+								<string>self.window.rootViewController = _menuController;</string>
+							</dict>
+						</dict>
+					</dict>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+</plist>
